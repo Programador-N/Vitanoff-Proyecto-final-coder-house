@@ -1,0 +1,76 @@
+/**
+* Estilos para la sección sobre nosotros - Vista desktop
+*/
+
+.image-sobre-nosotros {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.image-sobre-nosotros-text {
+  font-size: 100%;
+  text-align: center;
+  margin: 10px 0; /* Espaciado vertical alrededor del texto */
+  color: #333;
+  line-height: 1.5; /* Altura de línea para mejor legibilidad */
+}
+
+.btn {
+  padding: 10px 20px; /* Espaciado interno del botón */
+  margin: 10px 0; /* Margen alrededor del botón */
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer; /* Puntero cambia al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+
+.btn:hover, .btn:focus {
+  background-color: #0056b3;
+}
+
+.moda-texto {
+  text-align: center;
+  padding: 20px;
+  color: #000000;
+  font-size: 20px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  background-color: #f8f8f8;
+}
+
+/* Media Queries para vista móvil */
+
+@media (max-width: 600px) {
+  .image-sobre-nosotros {
+    font-size: 20px;
+    width: 100%;
+    border-radius: 5px; /* Bordes menos redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  }
+
+  .image-sobre-nosotros-text {
+    font-size: 90%;
+    margin: 5px 0; /* Menor espaciado vertical */
+    color: #333;
+    line-height: 1.4; /* Altura de línea más compacta */
+  }
+
+  .btn {
+    padding: 8px 15px; /* Espaciado interno menor */
+    margin: 8px 0; /* Menor margen */
+    font-size: 14px; /* Tamaño de la fuente más pequeño */
+  }
+
+  .moda-texto {
+    padding: 15px; /* Menor espaciado interno */
+    font-size: 18px; /* Tamaño de la fuente más pequeño */
+  }
+}

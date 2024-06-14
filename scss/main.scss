@@ -1,0 +1,59 @@
+
+/* Variables de estilos */
+$font-family: "Bebas Neue", sans-serif;
+$background-color: greenyellow;
+$font-color: #000000; /* Añadir color de fuente */
+$font-color-b: whitesmoke; 
+$primary-color: greenyellow;
+$secondary-color: gold;
+$navbar-bg-color: #000000; /* Asumiendo un color para la barra de navegación */
+$navbar-icon-color: #ffffff; /* Asumiendo un color para el icono de la barra de navegación */
+$text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+$btn-padding: 10px 20px;
+$btn-font-size: 16px;
+$btn-margin: 10px 5px;
+$header-font-size: 80px;
+$h2-font-size: 30px;
+$h1-font-size: 30px;
+
+
+$a-font-size: 20px;
+$navbar-font-size: 24px;
+$navbar-collapse-font-size: 20px;
+$container-max-width: 1200px;
+$container-padding: 0 40px;
+$card-width: 300px;
+$card-margin: 10px;
+$card-border-radius: 5px;
+$card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$card-hover-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+$big-text-font-size: 2em;
+$product-title-font-size: 1.5em;
+$product-description-font-size: 1em;
+$hover-color: #ff5733;
+$image-border-radius: 10px;
+$image-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+$sobre-nosotros-font-size: 2.5rem;
+$sobre-nosotros-text-padding: 80px 0;
+$sobre-nosotros-p-font-size: 1.1rem;
+$sobre-nosotros-btn-bg-color: #ff6f61;
+$sobre-nosotros-btn-hover-bg-color: #ff4c3b;
+
+
+//cambiando Propiedades a bootstrap
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+@import 'mixin';
+@import 'variables';
+@import 'breakpoint';
+@import 'quienessomos';
+@import 'imgportadas';
+@import 'contactos';
+

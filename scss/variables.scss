@@ -1,0 +1,257 @@
+
+/*CDN------------FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*CDN------------ICON--*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+/* Estilos generales */
+
+* {
+  font-family: $font-family;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: $background-color;
+}
+
+a {
+  font-size: $a-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  text-transform: uppercase;
+}
+
+h1 {
+  text-align: center;
+  font-size: $header-font-size;
+}
+
+/* Estilos para la barra de navegación */
+
+/**
+
+* *BARRA DE NAVEGACION
+
+*/
+.navbar {
+  background-color: $navbar-bg-color;
+  z-index: 1000; 
+}
+
+
+.navbar-expand-lg {
+  transition: all 0.3s ease-in-out;
+  border-bottom: 20px solid $navbar-bg-color;
+}
+
+
+.container-fluid {
+  max-width: $container-max-width; 
+  margin-right: auto; 
+  margin-left: auto; 
+}
+
+
+.navbar-brand {
+  font-size: $navbar-font-size; 
+  font-weight: bold; 
+  text-transform: uppercase;
+}
+
+
+.d-inline-block {
+  display: inline-block; 
+  vertical-align: middle; 
+  margin-right: 10px; 
+}
+
+
+.align-text-top {
+  vertical-align: top; 
+}
+
+
+.navbar-toggler {
+  border: none; 
+  background-color: transparent; 
+}
+
+
+.navbar-toggler-icon {
+  color: $navbar-icon-color; 
+}
+
+
+.collapse {
+  display: none; 
+}
+
+
+.navbar-collapse {
+  font-size: $navbar-collapse-font-size;
+  display: flex; 
+  justify-content: flex-end; 
+  width: 100%; 
+}
+
+
+.navbar-nav {
+  margin-right: auto;
+}
+
+
+
+
+
+/* Estilos para la sección de categorías */
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative; /* Para poder posicionar el texto grande de manera absoluta */
+  background: $secondary-color;
+  border: 1px solid $secondary-color;
+  border-radius: $card-border-radius;
+  margin: $card-margin;
+  width: $card-width; /* Puedes ajustar el tamaño según tus necesidades */
+  box-shadow: $card-box-shadow;
+  transition: transform 0.2s;
+  overflow: hidden; /* Para asegurarse de que el contenido no se desborde */
+}
+
+.card img {
+  max-width: 100%;
+  border-top-left-radius: $card-border-radius;
+  border-top-right-radius: $card-border-radius;
+}
+
+.card .category-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.card .category-description {
+  font-size: 1em;
+  padding: 0 15px 15px;
+  text-align: center;
+}
+
+.big-text {
+  font-size: $big-text-font-size;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.card:hover .big-text-box {
+  box-shadow: $card-hover-box-shadow;
+}
+
+/* Estilos para la galería */
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-card {
+  background: $secondary-color;
+  border: 1px solid $secondary-color;
+  border-radius: $image-border-radius;
+  margin: $card-margin;
+  overflow: hidden;
+  width: $card-width; /* Puedes ajustar el tamaño según tus necesidades */
+  box-shadow: $card-box-shadow;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-title {
+  font-size: $product-title-font-size;
+  margin: 0 0 10px;
+}
+
+.product-description {
+  font-size: $product-description-font-size;
+  color: #555;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: $card-hover-box-shadow;
+}
+
+/* CSS Avanzado para efectos hover y movimiento de texto */
+
+.deporte-titulo, .deporte-subtitulo, .deporte-detalle {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.card:hover .deporte-titulo,
+.card:hover .deporte-subtitulo,
+.card:hover .deporte-detalle,
+.product-card:hover .deporte-titulo,
+.product-card:hover .deporte-subtitulo,
+.product-card:hover .deporte-detalle {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.deporte-titulo:hover, .deporte-subtitulo:hover, .deporte-detalle:hover {
+  color: $hover-color; /* Color de texto al hacer hover */
+  transition: color 0.3s ease;
+}
+
+/* Botones */
+
+.btn {
+  display: inline-block;
+  padding: $btn-padding;
+  font-size: $btn-font-size;
+  border: none;
+  cursor: pointer;
+  margin: $btn-margin;
+}
+
+.greenyellow-btn {
+  background-color: $secondary-color;
+  color: $background-color;
+}
+
+.greenyellow-btn:hover {
+  background-color: $secondary-color;
+}
+
+.gold-btn {
+  background-color: $primary-color;
+  color: $background-color;
+}
+
+.gold-btn:hover {
+  background-color: $primary-color;
+}
